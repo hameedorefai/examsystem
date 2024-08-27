@@ -1,0 +1,52 @@
+.examination-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .examination-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .examination-table th,
+  .examination-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .examination-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .exam-details {
+    margin-top: 20px;
+  }
+  
+  .question {
+    margin-bottom: 15px;
+  }
+  
+  .options {
+    margin-left: 20px;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  

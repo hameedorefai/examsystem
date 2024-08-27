@@ -1,0 +1,259 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  textarea.question-textarea {
+    width: 100%;
+    height: 100px; /* تكبير مربع النص */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none; /* إزالة السهم الافتراضي */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 10,0 5,10" fill="%23999"/></svg>') no-repeat right 10px center; /* إضافة سهم مخصص */
+    background-size: 10px;
+  }
+  
+  .add-question-btn, .submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .add-question-btn:hover, .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .question-block {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  
+  .options-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .option-item {
+    margin: 10px 0;
+  }
+  
+
+  textarea.question-textarea {
+    width: 100%;
+    height: 60px; /* جعل مربع النص الخاص بالسؤال أصغر */
+    margin-bottom: 10px;
+    padding: 8px; /* تقليل الحشوة */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .options-list input[type="text"] {
+    width: 100%;
+    height: 40px; /* جعل مربع إدخال الخيارات أصغر من مربع السؤال */
+    margin-bottom: 5px;
+    padding: 6px; /* تقليل الحشوة */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  /* تكبير الخط في مربع إدخال السؤال */
+textarea.question-textarea {
+    width: 100%;
+    height: 60px; /* حجم مربع النص الخاص بالسؤال */
+    margin-bottom: 10px;
+    padding: 8px; /* الحشوة */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px; /* تكبير الخط */
+  }
+  
+  /* تكبير الخط في خيارات الإدخال */
+  .options-list input[type="text"] {
+    width: 100%;
+    height: 40px; /* حجم مربع إدخال الخيارات */
+    margin-bottom: 5px;
+    padding: 6px; /* الحشوة */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* تكبير الخط */
+  }
+  
+  /* تكبير الخط لعناوين الأسئلة */
+  h2, h3 {
+    font-size: 24px; /* تكبير خط العناوين */
+  }
+  
+  /* تكبير الخط في القوائم المنسدلة */
+  select {
+    font-size: 16px; /* تكبير الخط في القوائم المنسدلة */
+  }
+  .option-block {
+    display: flex;
+    align-items: center; /* محاذاة العناصر عموديًا */
+    margin-bottom: 5px; /* مسافة بين الخيارات */
+  }
+  
+  .option-input {
+    flex: 1; /* جعل مربع إدخال الخيار يشغل المساحة المتاحة */
+    height: 40px; /* ارتفاع مربع الإدخال */
+    margin-right: 10px; /* مسافة بين مربع الإدخال وزر الاختيار */
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center; /* محاذاة العناصر عموديًا */
+    margin-left: 10px; /* مسافة بين مربع الإدخال وزر الاختيار */
+  }
+  
+
+
+  .option-block {
+    display: flex;
+    align-items: center; /* محاذاة العناصر عموديًا */
+    margin-bottom: 5px; /* مسافة بين الخيارات */
+  }
+  
+  .option-input {
+    flex: 1; /* جعل مربع إدخال الخيار يشغل المساحة المتاحة */
+    height: 40px; /* ارتفاع مربع الإدخال */
+    margin-right: 10px; /* مسافة بين مربع الإدخال وزر الاختيار */
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center; /* محاذاة العناصر عموديًا */
+    margin-left: 10px; /* مسافة بين مربع الإدخال وزر الاختيار */
+  }
+  .question-textarea {
+    width: 100%; /* عرض الحقل ليتناسب مع الحاوية */
+    height: 80px; /* تحديد ارتفاع ثابت */
+    resize: none; /* منع تغيير حجم الحقل */
+    padding: 10px; /* إضافة padding لتحسين مظهر الحقل */
+    font-size: 16px; /* ضبط حجم الخط */
+    border: 1px solid #ccc; /* إضافة حد للحقل */
+    border-radius: 5px; /* جعل الزوايا مدورة */
+  }
+  .question-textarea {
+  width: 100%; /* عرض الحقل ليتناسب مع الحاوية */
+  height: 80px; /* تحديد ارتفاع ثابت */
+  resize: none; /* منع تغيير حجم الحقل */
+  padding: 10px; /* إضافة padding متساوي من جميع الجهات */
+  font-size: 16px; /* ضبط حجم الخط */
+  border: 1px solid #ccc; /* إضافة حد للحقل */
+  border-radius: 5px; /* جعل الزوايا مدورة */
+  box-sizing: border-box; /* للتأكد من أن padding والحدود لا تؤثر على الحجم الكلي للحقل */
+}
+.submit-btn {
+    background-color: #4CAF50; /* لون الخلفية الأساسي */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049; /* لون الخلفية عند التمرير */
+    box-shadow: 0 0 10px #45a049, 0 0 20px #45a049, 0 0 30px #45a049; /* تأثير الإضاءة */
+  }
+  .container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.add-question-btn, .submit-btn {
+  margin: 10px 0;
+}
+
+.message {
+  margin-top: 20px;
+  color: green; /* اللون الأخضر للرسائل الناجحة */
+}
+
+.exam-details {
+  margin-top: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.list-group-item {
+  background-color: #f9f9f9;
+}
+.exam-questions-title {
+    font-size: 24px; /* أو أي حجم تريده */
+    font-weight: bold;
+  }
+  
+  .exam-question {
+    font-size: 18px; /* أو أي حجم تريده */
+  }
+  .remove-question-btn {
+    background-color: red;
+    color: white;
+    border: 2px solid darkred; /* إضافة الحدود هنا */
+    border-radius: 5px; /* يمكنك إضافة زاوية محدبة إذا رغبت */
+    padding: 5px 10px; /* إضافة بعض الحشو لتحسين المظهر */
+    cursor: pointer; /* تغيير المؤشر عند المرور فوق الزر */
+  }
+  
+
+  .reset-button {
+    background-color: #f44336; /* لون الخلفية */
+    color: white; /* لون النص */
+    border: none; /* بدون حدود */
+    padding: 10px 20px; /* الحشو */
+    text-align: center; /* محاذاة النص */
+    text-decoration: none; /* بدون تسطير */
+    display: inline-block; /* عرض ككتلة */
+    font-size: 16px; /* حجم الخط */
+    border-radius: 5px; /* زوايا مستديرة */
+    cursor: pointer; /* شكل المؤشر */
+    position: fixed; /* وضع ثابت */
+    bottom: 20px; /* المسافة من الأسفل */
+    right: 20px; /* المسافة من اليمين */
+    z-index: 1000; /* التأكد من أن الزر فوق المحتوى الآخر */
+  }
+    
