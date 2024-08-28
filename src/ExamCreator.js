@@ -139,7 +139,7 @@ const ExamCreator = () => {
 
         setMessage('Exam created successfully. Fetching exam details...');
 
-        // تحقق من أنه يمكن استخدام newExamID في الطلب الثاني
+        // تحقق من أنه يمكن استخدام newExamID في الطلب الثانيd
         console.log("Fetching details for Exam ID:", newExamID);
 
         return axios.get(`https://examinationsystem-dfaxfka2hqhwgncc.westeurope-01.azurewebsites.net/api/Exam/${newExamID}`);
