@@ -14,7 +14,7 @@ const ExamCreator = () => {
   const [examDetails, setExamDetails] = useState(null); // لتخزين تفاصيل الامتحان المسترجعة
 
   useEffect(() => {
-    axios.get('https://localhost:7023/api/Course/List')
+    axios.get('https://examinationsystem-dfaxfka2hqhwgncc.westeurope-01.azurewebsites.net/api/Course/List')
       .then(response => {
         setCourses(response.data);
       })
@@ -131,7 +131,7 @@ const ExamCreator = () => {
       return; // أخرج من الدالة إذا كان هناك أخطاء
     }
 
-    axios.post('https://localhost:7023/api/Exam/Add', examData)
+    axios.post('https://examinationsystem-dfaxfka2hqhwgncc.westeurope-01.azurewebsites.net/api/Exam/Add', examData)
       .then(response => {
         const newExamID = response.data; // تأكد من أن القيمة هنا صحيحة
 
@@ -142,7 +142,7 @@ const ExamCreator = () => {
         // تحقق من أنه يمكن استخدام newExamID في الطلب الثاني
         console.log("Fetching details for Exam ID:", newExamID);
 
-        return axios.get(`https://localhost:7023/api/Exam/${newExamID}`);
+        return axios.get(`https://examinationsystem-dfaxfka2hqhwgncc.westeurope-01.azurewebsites.net/api/Exam/${newExamID}`);
       })
       .then(response => {
         setExamDetails(response.data);

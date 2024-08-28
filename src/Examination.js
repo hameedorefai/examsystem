@@ -9,7 +9,7 @@ const Examination = () => {
 
   useEffect(() => {
     // Fetch exams from API
-    axios.get('https://localhost:7023/api/Exam/Info?CourseID=1') // قم بتعديل الرابط حسب الحاجة
+    axios.get('https://examinationsystem-dfaxfka2hqhwgncc.westeurope-01.azurewebsites.net/api/Exam/Info?CourseID=1') // قم بتعديل الرابط حسب الحاجة
       .then(response => {
         setExams(response.data);
       })
@@ -21,7 +21,7 @@ const Examination = () => {
 
   const handleExamClick = (examID) => {
     // Fetch exam details when an exam is clicked
-    axios.get(`https://localhost:7023/api/Exam/${examID}`)
+    axios.get(`https://examinationsystem-dfaxfka2hqhwgncc.westeurope-01.azurewebsites.net/api/Exam/${examID}`)
       .then(response => {
         setSelectedExam(response.data);
       })
