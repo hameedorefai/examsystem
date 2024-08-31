@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <ExamCreator />
-      <Examination /> {/* إضافة Examination إلى التطبيق */}
     </div>
   );
 }
