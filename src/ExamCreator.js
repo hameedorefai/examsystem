@@ -264,16 +264,7 @@ const ExamCreator = () => {
           </div>
         ))}
 
-        <button type="button" className="add-question-btn" onClick={handleAddQuestion}>+ Add Question</button>
-        <br /><br /><br />
-        <button type="submit" className="submit-btn">Create Exam</button>
-        <button
-          type="button"
-          onClick={handleReset}
-          className="reset-button"
-        >
-          Reset
-        </button>
+  
 
       </form>
 
